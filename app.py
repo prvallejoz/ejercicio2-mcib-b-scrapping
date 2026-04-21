@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 import time
 
-archivo = "C:/Users/bryan/Downloads/PLACAS.xlsx"
+archivo = "PLACAS.xlsx"
 df = pd.read_excel(archivo, header=None)
 
 resultados = []
@@ -155,4 +155,4 @@ for index, row in df.iterrows():
 df_final = pd.DataFrame(resultados)
 print(df_final)
 
-df_final.to_csv("resultados_test.csv", index=False)
+df_final.to_csv("resultados.csv", index=False)
